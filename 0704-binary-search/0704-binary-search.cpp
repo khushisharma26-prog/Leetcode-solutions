@@ -8,7 +8,7 @@ public:
             int mid = (start + end) / 2;
             if (nums[mid] == target) {
                 return mid;
-                return 0;
+               
             }
 
             else if ( nums[mid] < target) {
@@ -23,6 +23,5 @@ public:
          }
 
          return -1;
-         return 0;
     }
 };
