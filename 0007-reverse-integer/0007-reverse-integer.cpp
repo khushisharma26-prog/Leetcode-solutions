@@ -7,13 +7,11 @@ public:
             int digit = x % 10;
 
             // Check overflow before ans * 10 + digit
-            if (ans > INT_MAX / 10 || 
-                (ans == INT_MAX / 10 && digit > 7)) {
+            if (ans > INT_MAX / 10 || (ans == INT_MAX / 10 && digit > 7)) {
                 return 0;
             }
 
-            if (ans < INT_MIN / 10 || 
-                (ans == INT_MIN / 10 && digit < -8)) {
+            if (ans < INT_MIN / 10 || (ans == INT_MIN / 10 && digit < -8)) {
                 return 0;
             }
 
