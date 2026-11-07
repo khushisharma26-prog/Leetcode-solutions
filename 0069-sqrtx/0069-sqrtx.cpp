@@ -3,16 +3,16 @@ public:
     int mySqrt(int x) {
         int start = 0;
         int end = x;
-        int ans=0;
+        int ans = 0;
 
         while (start <= end) {
-            double mid = (start + end)/2;
+            double mid = (start + end) / 2;
 
             if (mid * mid == x) {
                 return mid;
             }
 
-            else if (mid * mid < x ) {
+            else if (mid * mid < x) {
                 ans = mid;
                 start = mid + 1;
             }
